@@ -29,6 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding: 20px;
 }
 
 h1 {
@@ -66,4 +67,15 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+input {
+  height: 40px;
+  width: 200px;
+  display: block;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
 }
