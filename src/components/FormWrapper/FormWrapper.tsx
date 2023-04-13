@@ -6,7 +6,7 @@ import { SecoundStep } from '../SecoundStep/SecoundStep'
 import { ThirdStep } from '../ThirdStep/ThirdStep'
 export const FormWrapper = () => {
     const { register ,handleSubmit,getValues} = useForm();
-    const {formStep,handleNextStep,handlePrevStep,stepToRender,lastFormStep} = useMultiStepForm([<FirstStep register={register}  />,<SecoundStep register={register}/>,<ThirdStep register={register}/>]);
+    const {handleNextStep,handlePrevStep,stepToRender,lastFormStep} = useMultiStepForm([<FirstStep register={register}  />,<SecoundStep register={register}/>,<ThirdStep register={register}/>]);
   
     const onSubmit = (data:any) => {
   
