@@ -6,7 +6,7 @@ import { ThirdStep } from "../ThirdStep/ThirdStep";
 import { registerUser } from "../../../services/index";
 
 export const FormWrapper = () => {
-  const { register, handleSubmit, getValues } = useForm();
+  const { register, handleSubmit } = useForm();
   const { handleNextStep, handlePrevStep, stepToRender, lastFormStep } =
     useMultiStepForm([
       <FirstStep register={register} />,
